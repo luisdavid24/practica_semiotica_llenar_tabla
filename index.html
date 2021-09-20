@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Practica semiotica</title>
+    
+</head>
+<body>
+    <div>
+        <h1>Registro</h1>
+        <div>
+            <h4>Condiciones de uso</h4>
+            <p>La cedula debe tener entre 8 y 12 digitos.</p>
+            <p>La cedula debe tener solo numeros.</p>
+            <p>No debes ningun espacio vacio.</p>
+            <p>Notas entre 0.0 y 5.0 (no usar comas sino puntos).</p>
+            <p>Solo funcionara el boton "agregar" si eres mayor de edad y llenas toda los espacios correctamente.</p>
+            
+        </div>
+        <div >
+            <label for="">Cedula:</label>
+            <input type="text" name=""id="cedula" required ></input/>
+        </div>
+        <div>
+            <label for="">Nombre:</label>
+            <input type="text" name=""id="nombre" required></input/>
+        </div>
+        <div>
+            <label>Año de nacimiento:</label>
+            <input type="date" name="" id="fecha"required><br>
+        </div>
+        <div>
+            <label>Nota 1:</label>
+            <input type="text" name="" id="nota1"required><br>
+        </div>
+        <div>
+            <label>Nota 2:</label>
+            <input type="text" name="" id="nota2"required><br>
+        </div>
+        <div>
+            <label>Nota 3:</label>
+            <input type="text" name="" id="nota3"required><br>
+        </div>
+        <button type="button" id="boton1" class="btn btn-dark">Verificar</button>
+        <p id="warning"></p>
+        
+    </div>
+    <div>
+        <button type="button" id="boton3" class="btn btn-dark">agregar</button>
+        <button type="button" id="btnRecorrer" class="btn btn-danger">validar</button>
+        <table  id="tabla">
+            <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Cedula </th>
+                  <th scope="col">Nombre </th>
+                  <th scope="col">Nota1 </th>
+                  <th scope="col">Nota2 </th>
+                  <th scope="col">Nota3 </th>
+                  <th scope="col">Promedio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                  
+                </tr>
+            </tbody>
+            
+            
+        </table>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
